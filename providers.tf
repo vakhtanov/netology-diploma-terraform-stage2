@@ -7,7 +7,9 @@ terraform {
   required_version = ">=1.8.4"
 
   backend "s3" {
-    endpoint.s3 = "https://storage.yandexcloud.net"
+    endpoints {
+    s3 = "https://storage.yandexcloud.net"
+    }
     bucket       = "netology-vakhtanov-diploma-state-bucket"
     region       = "ru-central1"
     key          = "terraform.tfstate"
