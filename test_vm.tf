@@ -11,7 +11,7 @@ resource "yandex_compute_instance" "test_vm" {
   resources {
     core_fraction = 20
     cores         = 2
-    memory        = 2
+    memory        = 4
   }
   boot_disk {
     initialize_params {
