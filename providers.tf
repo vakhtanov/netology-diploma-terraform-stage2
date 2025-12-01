@@ -17,7 +17,7 @@ terraform {
     secret_key   = "..." #Только для примера. Секретные данные нельзя хардкодить
     use_lockfile = true
     #   encrypt = true #Шифрование state сервером Terraform
-    force_path_style            = true
+    use_path_style            = true
     skip_region_validation      = true
     skip_credentials_validation = true
     skip_requesting_account_id  = true # Необходимая опция Terraform для версии 1.6.1 и старше.
