@@ -1,8 +1,8 @@
-variable "ya_access_key" {
+variable "access_key" {
   type        = string
 }
 
-variable "ya_secret_key" {
+variable "secret_key" {
   type        = string
 }
 
