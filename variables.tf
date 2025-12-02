@@ -1,3 +1,11 @@
+variable "ya_access_key" {
+  type        = string
+}
+
+variable "ya_secret_key" {
+  type        = string
+}
+
 variable "cloud_id" {
   type        = string
   default     = "b1gbnkafeirsgsvi0dtd"
