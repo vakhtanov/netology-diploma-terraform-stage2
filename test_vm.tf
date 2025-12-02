@@ -2,6 +2,7 @@ resource "yandex_compute_instance" "test_vm" {
   count = 1 
   #depends_on = [ yandex_compute_instance.for-each ]
   name        = "test-vm"
+  hostname    = "test-vm"
   platform_id = var.manage_vm.platform_id
   zone        = var.public_subnet.zone
   #allow_stopping_for_update = true  
